@@ -18,7 +18,7 @@ function App() {
         zoom: 10,
       });
 
-      new window.google.maps.Marker({
+      new window.google.maps({
         position: { lat: -23.5505, lng: -46.6333 },
         map,
         title: "São Paulo",
@@ -30,13 +30,19 @@ function App() {
 
   return (
     <div className="App">
+
       <div className="sideLeft">
         <h3 style={{ color: 'white', textAlign: 'center' }}>My Google Maps</h3>
         <div id="map"></div>
       </div>
+      
       <div className="sideRight">
-        {/* Conteúdo extra aqui */}
+        {/* input de coordenadas aqui */}
+        <input type="text" placeholder="Latitude" />
+        <input type="text" placeholder="Longitude" />
+        <button>click me</button>
       </div>
+      
     </div>
   );
 }

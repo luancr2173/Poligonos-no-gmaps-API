@@ -9,13 +9,42 @@
 .sideLeft {
   width: 50%;
   height: 100%;
-  background-color: #1a1a1a;
+  background-color: black;
 }
 
 .sideRight {
   width: 50%;
   height: 100%;
-  background-color: #c2a7a7;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 50%;
+  height: 50px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5vw;
+  text-align: center;
+  border: none;
+}
+
+button {
+  width: 15%;
+  height: 50px;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5vw;
+  text-align: center;
+  border: none;
+  background-color: rgb(0, 255, 0);
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
 }
 
 #map {
