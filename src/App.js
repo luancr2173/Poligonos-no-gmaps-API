@@ -65,6 +65,7 @@ function App() {
         fillColor: "#00ff00",
         map: map,
         fillOpacity: 0.35,
+        
       });
 
 
