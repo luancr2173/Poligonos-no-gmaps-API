@@ -4,16 +4,18 @@
   background-color: black;
   display: flex;
   text-transform: uppercase;
+  flex-wrap: wrap;
 }
 
 .sideLeft {
-  width: 50%;
-  height: 100%;
+  width: 70vw;
+  height: 100vh;
   background-color: black;
+  margin-left: 2vw;
 }
 
 .sideRight {
-  width: 50%;
+  width: 28%;
   height: 100%;
   background-color: black;
   display: flex;
@@ -23,7 +25,7 @@
 }
 
 input {
-  width: 50%;
+  width: 80%;
   height: 50px;
   margin: 20px;
   padding: 5px;
@@ -33,27 +35,91 @@ input {
 }
 
 button {
-  width: 15%;
-  height: 50px;
-  margin: 20px;
-  padding: 5px;
+  width: 30%;
+  height: 70px;
   border-radius: 5vw;
   text-align: center;
   border: none;
-  background-color: rgb(0, 255, 0);
+  background-color: rgb(30, 255, 0);
   color: white;
   font-weight: 800;
-  font-size: 1rem;
+  font-size: 1rem; /* Isso pode ser ajustado para unidades relativas */
   text-transform: uppercase;
-}
-
-#map {
-  height: 93.5%;
-  width: 100%;
 }
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+#btn_limpar{
+  background-color: rgb(255, 64, 0);
+}
+
+/* Fonte responsiva usando unidades 'vw' para ajustar o tamanho */
+h3 {
+  font-size: 3vw; /* A fonte será 5% do tamanho da largura da tela */
+  color: white;
+  text-align: center;
+}
+
+/* Media Query para telas pequenas */
+@media screen and (max-width: 768px) {
+  .App {
+    flex-direction: column;
+  }
+
+  .sideLeft, .sideRight {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  input {
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+  }
+
+  button {
+    width: 60%;
+    height: 50px;
+    font-size: 1.2rem; /* Aumenta o tamanho do texto do botão */
+  }
+
+  #btn_limpar {
+    width: 60%;
+  }
+
+  h3 {
+    font-size: 8vw; /* Ajusta o título para ser maior em telas pequenas */
+  }
+}
+
+/* Media Query para telas muito pequenas */
+@media screen and (max-width: 480px) {
+  .sideLeft, .sideRight {
+    width: 100vw;
+    height: 100%;
+  }
+
+  input {
+    width: 80%;
+    height: 40px;
+    margin: 10px;
+  }
+
+  button {
+    width: 70%;
+    height: 50px;
+    font-size: 1.5rem; /* Aumenta ainda mais o tamanho do botão */
+  }
+
+  #btn_limpar {
+    width: 70%;
+  }
+
+  h3 {
+    font-size: 10vw; /* Ajusta ainda mais o tamanho do título para telas muito pequenas */
+  }
 }
