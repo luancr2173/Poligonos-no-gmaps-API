@@ -64,6 +64,12 @@ h3 {
   text-align: center;
 }
 
+h1{
+  font-size: 1vw; /* A fonte será 5% do tamanho da largura da tela */
+  color: white;
+  text-align: center
+}
+
 /* Media Query para telas pequenas */
 @media screen and (max-width: 768px) {
   .App {
@@ -73,12 +79,6 @@ h3 {
   .sideLeft, .sideRight {
     width: 100vw;
     height: 50vh;
-  }
-
-  input {
-    width: 90%;
-    height: 40px;
-    margin: 10px;
   }
 
   button {
@@ -104,8 +104,8 @@ h3 {
   }
 
   input {
-    width: 80%;
-    height: 40px;
+    width: 80vw;
+    height: 40vw;
     margin: 10px;
   }
 
@@ -123,3 +123,4 @@ h3 {
     font-size: 10vw; /* Ajusta ainda mais o tamanho do título para telas muito pequenas */
   }
 }
+
